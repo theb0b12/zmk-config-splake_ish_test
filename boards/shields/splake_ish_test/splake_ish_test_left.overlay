@@ -63,15 +63,12 @@
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-};
 
-&physical_layout_splake_ish_test {
-    kscan = <&kscan0>;
-};
-
-/ {
     chosen {
         zmk,underglow = &led_strip;
     };
 };
 
+&physical_layout_splake_ish_test {
+    kscan = <&kscan0>;
+};
